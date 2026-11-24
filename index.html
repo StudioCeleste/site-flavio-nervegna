@@ -54,7 +54,7 @@ h3{font-size:1.05rem;font-weight:500;margin:0 0 .6em}
 .sub-r{margin:0;font-size:.7rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
 .logos{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
 .logo{display:flex;align-items:center;justify-content:center;height:110px;padding:1.3rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff;text-decoration:none}
-.logo img{max-height:100%;max-width:100%;object-fit:contain;filter:grayscale(1);opacity:.85}
+.logo{min-width:0;overflow:hidden}.logo img{display:block;width:auto;height:auto;max-height:66px;max-width:100%;object-fit:contain;filter:grayscale(1);opacity:.85}
 .logo.dark img{filter:grayscale(1) invert(1)}
 .logo:hover img{opacity:1}.logo:hover .wordmark{color:var(--accent)}
 .wordmark{font-weight:400;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;text-align:center;line-height:1.4}
@@ -71,7 +71,7 @@ h3{font-size:1.05rem;font-weight:500;margin:0 0 .6em}
 .ess article{display:grid;grid-template-columns:200px 1fr;gap:clamp(1.5rem,4vw,3.5rem);padding:2rem 0;border-top:1px solid var(--line);align-items:start}
 .ess article:first-child{border-top:0;padding-top:0}
 .ess-logo{text-decoration:none;display:flex;align-items:center;justify-content:center;height:160px;padding:1.2rem;border:1px solid var(--line)}
-.ess-logo img{max-height:100%;object-fit:contain}
+.ess-logo{overflow:hidden}.ess-logo img{display:block;width:auto;height:auto;max-height:118px;max-width:100%;object-fit:contain}
 .ess h3{font-size:clamp(1.4rem,2.4vw,1.9rem);font-weight:300;margin-bottom:.5em}.ess .eyebrow{margin-bottom:.5rem}
 .ess p{max-width:66ch;margin:0}
 .press-list{border-top:1px solid var(--ink)}
@@ -104,6 +104,7 @@ blockquote{margin:0}
  .ess article{grid-template-columns:1fr}.ess-logo{max-width:200px}
  .press{grid-template-columns:1fr;gap:.2rem}.facts li{grid-template-columns:1fr;gap:.1rem}
  .gallery,.gallery.g3,.gallery.g4,.gallery.g5{columns:2}
+ .logos{grid-template-columns:1fr 1fr}.logo{height:96px;padding:1rem}.logo img{max-height:56px}
  .foot-in{grid-template-columns:1fr}.foot nav{align-items:flex-start;flex-direction:row;gap:1.4rem}
  .sub{scroll-margin-top:150px}
 }
